@@ -1,28 +1,47 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<title>Pokemon</title>
 </head>
-<body background="assets/images/escenariopokemon.jpg">
-	<center>
-	<h1><big>Elige a tu Pokemón</big></h1>
+<body background="assets/images/pokemons.jpg">
+	<bgsound src="assets/sonido/Pokemon opening 1 latino original Hd subtitulado letra.mp3">
+    <center>
+	<img src="assets/images/pokemon">
+	<table width="280" cellspacing="1" cellpadding="3" border="0" bgcolor="#1E679A"> 
+<tr> 
+   <td><font color="#FFFFFF" face="arial, verdana, helvetica"> 
+<b>Gran batalla Pokemón</b> 
+   </font></td> 
+</tr> 
+<tr> 
+   <td bgcolor="#ffffcc"> 
+   <font face="arial, verdana, helvetica"> 
+  <h1><font color="blue">Elige a tu Pokemón</font></h1>
 	<p id='lista'></p>
-	<select>
+	
+      <select>
        <option value="">Escoge tu Pokemón 1</option>
        <option value="Pikachu" id="Pikachu">Pikachu</option>
        <option value="Charizard" id="Charizard">Charizard</option>
        <option value="Blastoise" id="Blastoise">Blastoise</option>
-       <option value="Venasaur" id="Venasaur">Venasaur</option>
+       <option value="Venusaur" id="Venusaur">Venasaur</option>
 	</select>
-	<select>
+   	<select>
        <option value="">Escoge tu Pokemón 2</option>
        <option value="Pikachu" id="Pikachu">Pikachu</option>
        <option value="Charizard" id="Charizard">Charizard</option>
        <option value="Blastoise" id="Blastoise">Blastoise</option>
-       <option value="Venasaur" id="Venasaur">Venasaur</option>
-	</select>
-	<button type = "button" name="button">Iniciar batalla Pokemón</button>
+       <option value="Venusaur" id="Venusaur">Venasaur</option>
+	</select> 
+  
+
+	<button type = "button" name="button" onclick="pelear()">Iniciar batalla Pokemón</button>
+	<div id="pelear"></div>
+   </font> 
+   </td> 
+</tr> 
+</table>
 	<script type='text/javascript' src='js/js.js'></script>
     </center>
 </body>
